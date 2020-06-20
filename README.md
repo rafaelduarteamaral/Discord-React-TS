@@ -1,3 +1,8 @@
+
+## Representation of the Discord model
+
+![alt text](https://github.com/rafaelduarteamaral/Discord-React-TS/blob/master/Discord-Ts.png?raw=true)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
