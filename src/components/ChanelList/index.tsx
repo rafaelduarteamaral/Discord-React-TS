@@ -1,14 +1,23 @@
 import React from 'react';
 
-import { Container, Title, ExpandIcon } from './styles'
+import { Container, Category, AddCategoryIcon } from './styles'
+import ChannelButton from "../ChannelButton";
 
-const ServerName: React.FC = () => {
+const ChanelList: React.FC = () => {
     return (
         <Container>
-            <Title>Servidor do Rodz</Title>
-            <ExpandIcon />
+            <Category>
+                <span>Canais de texto</span>
+                <AddCategoryIcon />
+            </Category>
+
+            <ChannelButton channelName="chat-livre" />
+            <ChannelButton channelName="Trabalho" />
+            <ChannelButton channelName="lolzinho" />
+            <ChannelButton channelName="csgo" />
+            <ChannelButton channelName="valorant" />
         </Container>
     )
 };
 
-export  default  ServerName;
+export  default  ChanelList;

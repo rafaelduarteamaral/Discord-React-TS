@@ -1,14 +1,16 @@
 import React from 'react';
 
-import { Container, Title, ExpandIcon } from './styles'
+import { Container, HashtagIcon, Title, Separator, Description} from './styles'
 
-const ServerName: React.FC = () => {
+const ChanelInfo: React.FC = () => {
     return (
         <Container>
-            <Title>Servidor do Rodz</Title>
-            <ExpandIcon />
+            <HashtagIcon />
+            <Title>chat livre</Title>
+            <Separator />
+            <Description>Canal aberto para conversas</Description>
         </Container>
     )
 };
 
-export  default  ServerName;
+export  default  ChanelInfo;

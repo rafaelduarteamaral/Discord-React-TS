@@ -1,14 +1,28 @@
 import React from 'react';
 
-import { Container, Title, ExpandIcon } from './styles'
+import { Container, HashtagIcon, InviteIcon, SettingsIcon } from './styles'
 
-const ServerName: React.FC = () => {
+export interface Props {
+    channelName: string;
+    selected?: boolean;
+}
+
+const ChannelButton: React.FC<Props> = ({
+    channelName,
+    selected
+}) => {
     return (
-        <Container>
-            <Title>Servidor do Rodz</Title>
-            <ExpandIcon />
+        <Container className={selected ? 'active' : ''}>
+            <div>
+                <HashtagIcon />
+                <span>{channelName}</span>
+            </div>
+            <div>
+                <InviteIcon />
+                <SettingsIcon />
+            </div>
         </Container>
-    )
+    );
 };
 
-export  default  ServerName;
+export  default  ChannelButton;

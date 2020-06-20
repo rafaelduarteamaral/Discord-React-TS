@@ -1,15 +1,24 @@
 import React from 'react';
 
-import { Container, Title, ExpandIcon } from './styles';
+import { Container, Profile, Avatar, UserData, Icons, MicIcon, HeadPhoneIcon, SettingsIcon } from './styles';
 
-const ServerName: React.FC = () => {
+const UserInfo: React.FC = () => {
     return (
         <Container>
-            <Title>Servidor do Rodz</Title>
-
-            <ExpandIcon />
+            <Profile>
+                <Avatar />
+                <UserData>
+                    <strong>Rafael Amaral</strong>
+                    <span>#42323</span>
+                </UserData>
+            </Profile>
+            <Icons >
+                <MicIcon />
+                <HeadPhoneIcon />
+                <SettingsIcon />
+            </Icons>
         </Container>
     )
 };
 
-export  default  ServerName;
+export  default  UserInfo;
